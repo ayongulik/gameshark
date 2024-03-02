@@ -4,7 +4,7 @@ from unittest.mock import patch
 from challenge import main
 
 
-class TestExercisePart1(unittest.TestCase):
+class TestExercisePart2(unittest.TestCase):
 
     @patch('sys.stdout', new_callable=io.StringIO)
     def test_one(self, stdout):
