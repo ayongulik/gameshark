@@ -89,16 +89,13 @@ data = [
 class TestExercisePart3(unittest.TestCase):
 
     def test_one(self):
-        expected = functools.reduce(lambda a, b: a + b['sold'], data, 0)
-        self.assertEqual(get_sum(data, 'sold'), expected)
+        self.assertEqual(get_sum(data, 'sold'), 881)
     
     def test_two(self):
-        expected = functools.reduce(lambda a, b: a + b['stock'], data, 0)
-        self.assertEqual(get_sum(data, 'stock'), expected)
+        self.assertEqual(get_sum(data, 'stock'), 604)
     
     def test_three(self):
-        expected = functools.reduce(lambda a, b: a + b['price'], data, 0)
-        self.assertEqual(get_sum(data, 'price'), expected)
+        self.assertEqual(get_sum(data, 'price'), 511.49999999999994)
         
 
 if __name__ == '__main__':
