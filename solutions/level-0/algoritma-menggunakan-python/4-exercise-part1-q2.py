@@ -1,13 +1,13 @@
 def main(formal, rsvp, number_of_friends, gift_price, almamater):
     if formal == True and rsvp == True:
         if number_of_friends <= 2 and gift_price >= 200:
-            print('Diterima')
+            print('Diterima!')
         elif (number_of_friends <= 2 or gift_price >= 200) and (almamater == "Unpar" or almamater == "UHasselt"):
-            print('Diterima')
+            print('Diterima!')
         else:
-            print('Ditolak')
+            print('Ditolak~')
     else:
-        print('Ditolak')
+        print('Ditolak~')
 
 
 if __name__ == '__main__':
